@@ -59,7 +59,7 @@ function M.open_help_split()
          api.nvim_win_set_buf( api.nvim_get_current_win(), help_buf )
          bo.bufhidden = bufhidden
 
-         if M.config.side == 'left' then
+         if M.config.side == 'right' then
             vim.cmd 'wincmd r'
          end
       end
